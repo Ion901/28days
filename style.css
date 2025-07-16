@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+article:nth-child(2){
+    align-self:flex-end;
+}
+
+@media (480px >= width){
+    article{
+        background-color: #fff;
+    }
+}
+@media (768px >= width){
+    article{
+        background-color: blue;
+    }
+}
+@media (width <= 1024px){
+    article{
+        background-color: yellow;
+    }
+}
+
+@media (width <= 1280px){
+    article{
+        background-color: red;
+    }
+}
