@@ -5,33 +5,43 @@
 }
 
 main{
+    width: 70%;
+    height: min-content;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40vh;
+    margin: 0 auto;
+    border: 1px solid black;
+    box-shadow: 10px 10px 23px -6px rgba(0, 0, 0, 0.75);;
 }
-article:nth-child(2){
-    align-self:flex-end;
-}
-
-@media (480px >= width){
-    article{
-        background-color: #fff;
-    }
-}
-@media (768px >= width){
-    article{
-        background-color: blue;
-    }
-}
-@media (width <= 1024px){
-    article{
-        background-color: yellow;
-    }
+.container-header{
+    padding: 20px;
 }
 
-@media (width <= 1280px){
-    article{
-        background-color: red;
-    }
+.container-skills{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+.container-skills ul>li{
+    list-style-type: none;
+}
+
+.left-side-container{
+    padding:10px 10px 0px 20px;
+    background-color:rgb(32, 30, 30);
+    color: white;
+    width: 75%;
+}
+.right-side-container{
+    padding: 30px;
+}
+.info-experience{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.experience-container p{
+    margin: 10px 0px;
+}
+.profile-container, .studies-container, .experience-container, .tehcnology-container{
+    padding: 10px;
 }
